@@ -94,14 +94,10 @@ function onClickHandler(isMultiply) {
       } else if (index > 0 && index < array.length - 1 && index % 2 === 0) {
         let newCircle = new Circle(circle.x, circle.y, circle.color);
         if (circle.y > randomY[index]) {
-          console.log(randomY, "YY");
-
           newCircle.y -= step;
           flag = false;
         }
         if (circle.y < randomY) {
-          console.log(randomY, "YY");
-
           newCircle.y += step;
           flag = false;
         }
